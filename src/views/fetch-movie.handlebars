@@ -1,16 +1,26 @@
-<form action="/fetch-movie" method="POST">
-    <input id="movieNameInput" name="search" placeholder="movie name" required>
-    <button type="submit">Search</button>
-</form>
-
-
-<div class="list">
-    {{#each movie}}
-    <div class="item">
-        <a href="/movie-details/{{movieId}}">
-            <img src="{{posterUrl}}" />
-        <h2>{{title}}</h2>
-        </a>
-    </div>
-    {{/each}}
-</div>
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="card w-50">
+        <div class="card-body">
+            <form action="/fetch-movie" method="POST">
+                <h1 class="card-title text-center search-title">Search</h1>
+                <div class="card-text text-center">
+                    <p class="search-paragraph">Você poderá obter detalhes do seu filme favorito!</p>
+                </div>
+                <div class="input-group mb-3">
+                    <input id="movieNameInput" name="search" class="form-control search-input" placeholder="Digite aqui..." required>
+                    <button type="submit" class="btn btn-custom">Search</button>
+                </div>
+                <div class="container mt-5">
+                <div class="row">
+                    {{#each movie}}
+                    <div class="col-md-6 mb-4">
+                        <div class="card search-card">
+                            <a href="/movie-details/{{movieId}}">
+                                <div class="card-details">
+                                    <img src="{{posterUrl}}" class="card-img-top" alt="{{title}}">
+                                    <h5 class="card-title">{{title}}</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    {{/each}}

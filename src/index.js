@@ -6,7 +6,7 @@ const handlebars = require('express-handlebars');
 const routes = require('./routes/mainRoutes');
 const { AppStrings } = require('./utils/constants/appStrings');
 
-
+app.use('/node_modules', express.static('node_modules'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

@@ -1,5 +1,5 @@
 body {
-    background-color: #6b6867; 
+    background-color: #202020; 
     margin: 0;
     padding: 0;
 }
@@ -31,4 +31,102 @@ div.menu{
     padding: 10px;
     margin: 3px;
     border: 3px solid rgb(248, 248, 248);
+}
+.navbar-custom {
+    background-color: #2e2e2e; /* Cor de fundo personalizada */
+    color: #000000; /* Cor do texto personalizada */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff; /* Cor do texto dos links */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #cccccc; /* Cor do texto dos links ao passar o mouse */
+}
+.btn-custom {
+    background-color: #d8d8d8; /* Cor de fundo personalizada */
+    color: #000000; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+}
+
+.btn-custom:hover {
+    background-color: #d8d8d8; 
+    color: #ffffff; 
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+.card {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-card .card-title {
+    color: #ffffff; /* Cor branca para o título do card */
+}
+
+.search-card .card-body {
+    color: #cccccc; 
+}
+.card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 440px; /* Altura fixa para todos os cards */
+    width: 307;
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa a altura */
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+.card-img-top {
+    width: 279px;
+    height: 390px;
+}
+
+.card-title {
+    margin-top: 10px;
+    color: #ffffff;
+    overflow: hidden; /* Esconde o texto que ultrapassa o limite */
+    text-overflow: ellipsis; /* Adiciona reticências ao texto que ultrapassa o limite */
+    width: 100%; /* Garante que o texto ocupe toda a largura disponível */
+    white-space: nowrap; /* Impede a quebra de linha */
+    width: 100%; /* Garante que o texto ocupe toda a largura disponível */
+    max-width: 279px; /* Limita a largura do texto ao tamanho da imagem */
+}
+.search-title {
+    color: #ffffff;
+}
+.search-paragraph {
+    color: #ffbb00;
+}
+.search-input {
+    background-color: #2e2e2e;
+    color: #ffd900;
+}
+.search-input:focus {
+    background-color: inherit;
+    color:#ffffff;
+}
+.search-input::placeholder {
+    color: #ffffff;
+}
+.container mt-5{
+    border: 3px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+.movie-details h1 {
+    color: #ffffff; 
+}
+
+.movie-details p {
+    color: #cccccc; 
 }

@@ -1,6 +1,14 @@
-<h1>{{ movie.title }}</h1>
-<p><strong>Release year:</strong> {{ movie.year }}</p>
-<p><strong>Director:</strong> {{ movie.director }}</p>
-<p><strong>Gender:</strong> {{ movie.genre }}</p>
-<p><strong>Description:</strong> {{ movie.plot }}</p>
-<img src={{ movie.posterUrl }} width="200px"; "Poster">
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="{{ movie.posterUrl }}" class="img-fluid" alt="Poster">
+        </div>
+        <div class="col-md-8 movie-details">
+            <h1>{{ movie.title }}</h1>
+            <p><strong>Release year:</strong> {{ movie.year }}</p>
+            <p><strong>Director:</strong> {{ movie.director }}</p>
+            <p><strong>Genre:</strong> {{ movie.genre }}</p>
+            <p><strong>Description:</strong> {{ movie.plot }}</p>
+        </div>
+    </div>
+</div>
